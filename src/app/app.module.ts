@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularSlickgridModule } from 'angular-slickgrid';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    AngularSlickgridModule.forRoot(),
+    TranslateModule.forRoot(),
     BrowserModule
   ],
   providers: [],
